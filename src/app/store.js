@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import countriesReducer from '../features/countries/countriesSlice';
 
+// eslint-disable-next-line import/prefer-default-export
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    countries: countriesReducer,
   },
 });
+
+// export default { store };
